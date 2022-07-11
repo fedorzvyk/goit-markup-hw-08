@@ -1,0 +1,30 @@
+.section-work {
+    padding: 94px 0;
+  }
+  
+  .section-work__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .section-work__item {
+    position: relative;
+  }
+  
+  .section-work__subtitle {
+    position: absolute;
+    bottom: 0;
+  
+    display: flex;
+    width: 370px;
+    align-items: center;
+    justify-content: center;
+    padding: 27px 0;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+  }

@@ -4,6 +4,8 @@
 
 .section-advantage__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 
 .section-advantage__icon {
@@ -23,9 +25,9 @@
 }
 
 .section-advantage__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+ 
+  --items: 4;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .section-advantage__title,

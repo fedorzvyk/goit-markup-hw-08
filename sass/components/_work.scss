@@ -4,19 +4,25 @@
   
   .section-work__list {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: var(--indent);
   }
   
   .section-work__item {
     position: relative;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   }
   
+  .section-work__img {
+    width: 100%;
+  }
+
   .section-work__subtitle {
     position: absolute;
     bottom: 0;
   
     display: flex;
-    width: 370px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     padding: 27px 0;

@@ -4,8 +4,19 @@
 
 .section-clients__list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
+  flex-wrap: wrap;
 }
+
+.section-clients__item{
+  display: flex;
+  justify-content: center;
+  --items: 6;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+
+
 
 .section-clients__logo {
   display: flex;

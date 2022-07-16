@@ -1,11 +1,18 @@
 .section-advantage {
-  padding-top: 94px;
-}
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
 .section-advantage__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
 }
 
 .section-advantage__icon {
@@ -18,16 +25,27 @@
   align-items: center;
   justify-content: center;
   height: 120px;
-  width: 270px;
+  width: 100%;
   margin-bottom: 30px;
   background-color: var(--secondary-bg);
   border-radius: 4px;
 }
 
 .section-advantage__item {
- 
-  --items: 4;
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
 }
 
 .section-advantage__title,
@@ -35,13 +53,18 @@
 .section-team__title,
 .section-clients__title,
 .section-projects__title {
-  color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .section-advantage__subtitle {
@@ -52,6 +75,10 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .section-advantage__text {

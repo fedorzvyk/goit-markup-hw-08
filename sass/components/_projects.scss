@@ -92,7 +92,9 @@
 // }
 
 .section-projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   // width: 100%;
 
   transition-property: box-shadow;
@@ -145,6 +147,11 @@
   line-height: 1.56;
   padding: 63px 24px;
 
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    padding: 24px;
+  }
+
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
 
@@ -159,4 +166,5 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 24px 20px;
+  flex-grow: 1;
 }

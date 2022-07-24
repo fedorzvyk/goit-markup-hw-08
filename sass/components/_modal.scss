@@ -9,7 +9,7 @@
   opacity: 1;
   visibility: visible;
 
-  padding: 93px 15px 94px 15px;
+  // padding: 93px 15px 94px 15px;
   overflow-y: scroll;
 
   transition-property: opacity, visibility;
@@ -29,11 +29,13 @@
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {

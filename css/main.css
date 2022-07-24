@@ -101,6 +101,11 @@ body.menu-open {
     text-align: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .social-group {
+    margin: 0 0 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .social-group {
     margin-left: 70px;
@@ -1139,6 +1144,11 @@ img {
 @media screen and (max-width: 1199px) {
   .footer__contact-group {
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__contact-group {
+    margin-bottom: 60px;
   }
 }
 

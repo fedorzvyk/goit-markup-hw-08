@@ -73,6 +73,10 @@ body.menu-open {
     // margin: 0 0 60px;
   }
 
+  @media screen and (max-width: 767px) {
+    margin: 0 0 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
